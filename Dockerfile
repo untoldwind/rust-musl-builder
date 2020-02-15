@@ -60,7 +60,9 @@ ENV PATH=/root/.cargo/bin:/usr/local/musl/bin:/usr/local/sbin:/usr/local/bin:/us
     PKG_CONFIG_ALLOW_CROSS=true \
     PKG_CONFIG_ALL_STATIC=true \
     LIBZ_SYS_STATIC=1 \
-    TARGET=musl
+    TARGET=musl \
+    CARGO_HOME=/root/.cargo \
+    RUSTUP_HOME=/root/.rustup
 
 RUN mkdir -p /root/libs /root/src
 WORKDIR /root/src
