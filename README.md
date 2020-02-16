@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build
-      uses: docker://untoldwind/rust-musl-builder:latest
+      uses: docker://untoldwind/rust-musl-builder:v1.41.0
       with:
         args: cargo build --release
 ```
